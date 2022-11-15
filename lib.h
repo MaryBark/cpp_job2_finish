@@ -4,7 +4,8 @@
 #include <functional>
 
 using IpOctetType = int;
-using IpAddr = std::tuple<IpOctetType, IpOctetType, IpOctetType, IpOctetType>;
+// using IpAddr = std::tuple<IpOctetType, IpOctetType, IpOctetType, IpOctetType>;
+using IpAddr = std::array<int, 4>; /// да, так попроще, а я не догадалась))))
 
 extern bool Compare(int value, int data);
 
